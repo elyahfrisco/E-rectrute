@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 120px;
+}
+header a {
+  margin: 0px 20px;
+  text-decoration: none;
+  font-family: cursive;
+  font-size: 17px;
+  color: black;
+}
+header a:hover{
+color: #22C55E;
+}
+header img {
+  height: 100px;
+  border-radius: 50px;
+  width: 200px;
+}
+.first-page {
+  height: 100vh;
+  background: black;
+}
+
+.card-content {
+  height: 60%;
+  /* background: rgb(199, 44, 44); */
+  background-image: url("images/back.jpg");
+  position: relative;
+}
+
+.div-orange {
+  height: 340px;
+  background: rgb(237, 103, 8);
+  width: 33%;
+  bottom: -90px;
+  position: absolute;
+  left: 50%;
+  animation: from-bottom 2s both;
+  transform: translateX(-50%);
+}
+.left-content {
+  height: 268px;
+  background: #ffff;
+  width: 350px;
+  position: absolute;
+  left: 34%;
+  transform: translateX(-50%);
+  bottom: 45px;
+  z-index: 1;
+  animation: from-left 1s both;
+}
+
+.left-content h1 {
+  margin-top: 40px;
+  margin-left: 40px;
+  font-size: 50px;
+}
+.left-content h3 {
+  margin-left: 40px;
+  color: rgb(83, 81, 81);
+}
+.right-content {
+  height: 600px;
+  background: white;
+  width: 450px;
+  position: absolute;
+  bottom: -70%;
+  z-index: 1;
+  right: 50%;
+  transform: translateX(87%);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.right-content div {
+  width: 45%;
+  padding: 10px;
+}
+h4,
+p {
+  margin: 0;
+}
+h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  animation: slidein-left 1s both;
+}
+
+p {
+  font-family: ui-monospace;
+  animation: pulsate 2s both;
+}
+
+hr {
+  height: 3px;
+  background: rgb(237, 103, 8);
+  border: none;
+  width: 80%;
+  float: left;
+  animation: slidein-left 2s both;
+}
+@keyframes from-left {
+  0% {
+    left: 10%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 34%;
+    opacity: 1;
+  }
+}
+
+@keyframes from-right {
+  0% {
+    right: -400px;
+    opacity: 0;
+  }
+
+  100% {
+    right: 50px;
+    opacity: 1;
+  }
+}
+
+@keyframes from-bottom {
+  0% {
+    bottom: -600px;
+    opacity: 0;
+  }
+
+  100% {
+    right: -90px;
+    opacity: 1;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+@keyframes slidein-left {
+  from {
+    margin-left: 50%;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0%;
+    opacity: 1;
+  }
+}
+/* ---------------------------------------------------------------------Service-------------------------------------------------------------------- */

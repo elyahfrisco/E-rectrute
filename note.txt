@@ -1,0 +1,96 @@
+1- Gestion de l'authentification
+
+Installer fortify pour l'authentification
+
+composer require laravel/fortify
+
+après
+
+php artisan make:model Role -mc
+
+-m:on vas creer une migration
+-c:On vas creer un controller
+
+
+Novana 2013 @ fa cle etrangers ao @ user 
+
+ensuite 
+
+php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"
+
+php artisan migrate
+
+Lancer
+
+php artisan serve
+
+si voulez voir les differents route que fortify à creer 
+php artisan route:list
+
+
+installation de tailwind css
+npm install tailwindcss
+
+effacher memoire cache
+php artisan cache:clear
+
+creer un modele 
+php artisan make:model Job -mc
+
+-mc pour creer un migration
+
+pur lancer webpack mix:
+npm run watch
+
+hero icons
+Usage
+Open up command palette with ctrl+shift+p
+Enter command Hero Icons
+
+installer alpine js
+npm install alpinejs
+import 'alpinejs';
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+
+
+
+creer un migration puis remplir puis migrer vers la table:
+php artisan make:migration create_job_user_table
+
+à remplir les contraintes puis
+php artisan migrate
+
+pour migrer
+
+après il faut definir les relation en creant des fonctions dans le modele
+
+
+
+
+installer des composant livewire
+
+php artisan make:livewire job
+
+
+il faut meetre en place la migration puis le model avant de migrer
+
+
+creer un middlware:
+php artisan make:middleware CheckIfProposalSubmitted
+
+creer un policy pour la securité 
+php artisan make:policy ConversationPolicy  --model=Conversation
+
+creer un controller
+php artisan make:controller WelcomeController
+
+
+
+creer mail:
+php artisan make:mail TestMail
+
+refresh base de donne:
+php artisan  migrate:refresh
+
+
+creer un observer
